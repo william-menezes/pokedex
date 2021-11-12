@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokemonService } from './services/pokemon.service';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MiniCardComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
