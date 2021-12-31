@@ -1,5 +1,21 @@
-<div class="mini-card p-3 m-3 green">
-  <h2 class="mb-3">Bulbasaur</h2>
+<div class="mini-card p-3 m-3" *ngFor="let pokemon of pokemons" [ngClass]="pokemon.class">
+  <h2 class="mb-3 text-capitalize">{{ pokemon.name }}</h2>
+  <div class="row">
+    <div class="col-6">
+      <ul>
+        <li class="tips mb-2 text-capitalize">{{ pokemon.types }}</li>
+        <!--li class="tips">Poison</li-->
+      </ul>
+    </div>
+    <div class="col-6">
+      <img [src]="pokemon.img"
+        alt="">
+    </div>
+  </div>
+</div>
+
+<!--<div class="mini-card p-3 m-3 green">
+  <h2 class="mb-3 text-capitalize">Bulbasaur</h2>
   <div class="row">
     <div class="col-6">
       <ul>
@@ -43,8 +59,9 @@
     </div>
   </div>
 </div>
+
 <div class="mini-card p-3 m-3 blue">
-  <h2 class="mb-3">Squirtle</h2>
+  <h2 class="mb-3 text-capitalize">squirtle</h2>
   <div class="row">
     <div class="col-6">
       <ul>
@@ -56,4 +73,4 @@
         alt="">
     </div>
   </div>
-</div>
+</div> -->

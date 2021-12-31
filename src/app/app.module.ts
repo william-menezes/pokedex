@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { PokemonService } from './services/pokemon.service';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MiniCardComponent,
     HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
