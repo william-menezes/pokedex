@@ -9,3 +9,11 @@
 li {
     list-style-type: none;
 }
+
+.text-active {
+  color: $text-active;
+}
+
+.text-inactive {
+  color: $text-inactive;
+}

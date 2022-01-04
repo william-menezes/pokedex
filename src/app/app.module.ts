@@ -8,6 +8,7 @@ import { PokemonService } from './services/pokemon.service';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
     MiniCardComponent,
     HeaderComponent,
     HomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,87 @@
+@import '../../../assets/scss/variables.scss';
+
+.container-fluid {
+  /* background: url('../../../assets/images/pokeball.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 190px; */
+  border-radius: 20px;
+  z-index: -1;
+
+  h2,
+  h4,
+  a,
+  a:hover {
+    color: #fff;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    z-index: 20;
+  }
+
+  .img-evolution {
+    width: 75px;
+    height: 75px;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  .tips {
+    width: 100px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.green {
+  background-color: $green;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.red {
+  background-color: $red;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-link {
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: $text-inactive;
+  }
+
+  .active {
+    color: $text-active;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.information {
+  position: relative;
+  top: -85px;
+  background-color: #fff;
+  z-index: 10;
+}
