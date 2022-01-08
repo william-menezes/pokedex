@@ -1,0 +1,12 @@
+@import '../../../assets/scss/variables.scss';
+
+.searchbar {
+  background: #fff;
+  color: $text-active;
+
+  input:focus,
+  &::selection, &::placeholder {
+    box-shadow: none;
+    color: $text-active
+  }
+}

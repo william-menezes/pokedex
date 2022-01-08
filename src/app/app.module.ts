@@ -9,6 +9,7 @@ import { MiniCardComponent } from './components/mini-card/mini-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CardComponent } from './components/card/card.component';
     HeaderComponent,
     HomeComponent,
     CardComponent,
+    SearchbarComponent,
   ],
   imports: [
     BrowserModule,
