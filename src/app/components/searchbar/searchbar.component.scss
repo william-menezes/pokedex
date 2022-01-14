@@ -3,6 +3,7 @@
 .searchbar {
   background: #fff;
   color: $text-active;
+  //max-width: 350px;
 
   input:focus,
   &::selection, &::placeholder {
