@@ -14,9 +14,18 @@
     color: #fff;
   }
 
+  h3 {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   img {
     width: 120px;
     height: 120px;
+  }
+
+  .pokemon {
+    width: 30px;
+
   }
 
   .tips {
@@ -35,18 +44,75 @@
   }
 }
 
-.green {
-  background-color: $green;
+
+.normal {
+  background-color: $normal;
 }
 
-.yellow {
-  background-color: $yellow;
+.fire {
+  background-color: $fire;
 }
 
-.red {
-  background-color: $red;
+.water {
+  background-color: $water;
 }
 
-.blue {
-  background-color: $blue;
+.eletric {
+  background-color: $electric;
+}
+
+.grass {
+  background-color: $grass;
+}
+
+.ice {
+  background-color: $ice;
+}
+
+.fighting {
+  background-color: $fighting;
+}
+
+.poison {
+  background-color: $poison;
+}
+
+.ground {
+  background-color: $ground;
+}
+
+.flying {
+  background-color: $flying;
+}
+
+.psychic {
+  background-color: $psychic;
+}
+
+.bug {
+  background-color: $bug;
+}
+
+.rock {
+  background-color: $rock;
+}
+
+.ghost {
+  background-color: $ghost;
+}
+
+.dragon {
+  background-color: $dragon;
+}
+
+.dark {
+  background-color: $dark;
+}
+
+.steel {
+  background-color: $steel;
+}
+
+.fairy {
+  background-color: $fairy;
 }

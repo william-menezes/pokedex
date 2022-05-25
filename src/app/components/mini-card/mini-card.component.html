@@ -1,28 +1,18 @@
-<!--a-- routerLink="/card" class="mini-card p-3 m-3" *ngFor="let pokemon of pokemons" [ngClass]="pokemon.class">
-  <h2 class="mb-3 text-capitalize">{{ pokemon.name }}</h2>
-  <div class="row">
-    <div class="col-6">
-      <ul>
-        <li class="tips mb-2 text-capitalize">{{ pokemon.types }}</li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <img [src]="pokemon.img" alt="">
+<div class="mb-3" *ngFor="let pokemon of apiResponse">
+  <div >
+    <div *ngIf="pokemon.status" class="mini-card p-3 row" [ngClass]="pokemon.status.types[0].type.name">
+      <h2 class="col-9 mb-3 text-capitalize">{{ pokemon.name }}</h2>
+      <h3 class="col-3 mb-3 fst-italic text-end">#{{ pokemon.status.id }}</h3>
+      <div class="col-6">
+        <ul>
+          <li *ngFor="let type of pokemon?.status?.types" class="tips mb-2 text-capitalize">{{ type.type.name }}</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <img [src]="pokemon.status.sprites.other.home.front_default"
+          alt="">
+      </div>
     </div>
   </div>
-</!--a-->
+</div>
 
-<a class="mb-3" routerLink="/card" *ngFor="let pokemon of pokemons">
-  <div class="mini-card p-3 border row" [ngClass]="pokemon.class">
-    <h2 class="col-12 mb-3 text-capitalize">{{ pokemon.name }}</h2>
-    <div class="col-6">
-      <ul>
-        <li class="tips mb-2 text-capitalize">{{ pokemon.types }}</li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <img [src]="pokemon.img"
-        alt="">
-    </div>
-  </div>
-</a>
